@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>『당신의 운명을 바꾸는 특별한 번호』</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#00F5A0',
+            secondary: '#00D9F5',
+            dark: '#0A0A0A',
+          },
+          fontFamily: {
+            sans: ['Noto Sans KR', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-dark text-white font-sans">
+  <!-- Navigation -->
+  <nav class="fixed w-full bg-dark/80 backdrop-blur-md border-b border-white/10 z-50">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between h-20">
+        <a href="/" class="text-2xl font-bold">
+          <span class="text-primary">LUCKY</span>
+          <span class="text-white">NUMBERS</span>
+        </a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#story" class="text-white/70 hover:text-primary transition">스토리</a>
+          <a href="#proof" class="text-white/70 hover:text-primary transition">당첨 인증</a>
+          <a href="#service" class="text-white/70 hover:text-primary transition">서비스</a>
+          <a href="#reviews" class="text-white/70 hover:text-primary transition">후기</a>
+          <a href="/login" class="bg-primary text-dark px-6 py-2.5 rounded-full hover:bg-opacity-90 transition">로그인</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="min-h-screen pt-32 pb-20 relative overflow-hidden">
+    <div class="absolute inset-0">
+      <div class="absolute inset-0 bg-gradient-to-b from-dark to-dark/50"></div>
+      <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/10 to-transparent"></div>
+      <div class="absolute bottom-0 left-0 w-1/2 h-1/2 bg-gradient-to-r from-secondary/10 to-transparent"></div>
+    </div>
+    <div class="container mx-auto px-4 relative">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-12 md:mb-0">
+            <div class="relative">
+              <div class="absolute -top-8 -left-8 w-16 h-16 bg-primary/20 rounded-full blur-xl"></div>
+              <div class="absolute -bottom-8 -right-8 w-16 h-16 bg-secondary/20 rounded-full blur-xl"></div>
+              <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                당신의 운명을<br/>
+                <span class="text-primary relative">
+                  바꿀 특별한 번호
+                  <div class="absolute -bottom-2 left-0 w-full h-1 bg-primary/50"></div>
+                </span>
+              </h1>
+              <p class="text-white/70 text-lg mb-8">
+                실제 1등 당첨자가 10년간 연구한<br/>
+                특별한 번호 추천 서비스
+              </p>
+              <div class="flex space-x-4">
+                <a href="#service" class="bg-primary text-dark px-8 py-4 rounded-full text-lg font-bold hover:bg-opacity-90 transition">
+                  시작하기
+                </a>
+                <a href="#story" class="border border-white/20 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-white/5 transition">
+                  더 알아보기
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-1/2 relative">
+            <div class="relative z-10">
+              <div class="absolute -top-8 -right-8 w-32 h-32 bg-primary/20 rounded-full blur-2xl"></div>
+              <div class="absolute -bottom-8 -left-8 w-32 h-32 bg-secondary/20 rounded-full blur-2xl"></div>
+              <img src="hero-image.jpg" alt="로또 당첨" class="rounded-3xl transform rotate-3 hover:rotate-0 transition-transform duration-500" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story Section -->
+  <section id="story" class="py-20 relative">
+    <div class="absolute inset-0 bg-gradient-to-b from-dark to-dark/50"></div>
+    <div class="container mx-auto px-4 relative">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center gap-16">
+          <div class="md:w-1/2 order-2 md:order-1">
+            <div class="relative">
+              <div class="absolute -top-8 -left-8 w-16 h-16 bg-primary/20 rounded-full blur-xl"></div>
+              <div class="absolute -bottom-8 -right-8 w-16 h-16 bg-secondary/20 rounded-full blur-xl"></div>
+              <img src="story-image.jpg" alt="연구 과정" class="rounded-3xl transform -rotate-3 hover:rotate-0 transition-transform duration-500" />
+            </div>
+          </div>
+          <div class="md:w-1/2 order-1 md:order-2">
+            <h2 class="text-4xl font-bold mb-12 relative">
+              특별한 이야기
+              <div class="absolute -bottom-4 left-0 w-24 h-1 bg-primary"></div>
+            </h2>
+            <div class="space-y-8">
+              <div class="bg-white/5 rounded-2xl p-8 border border-white/10 transform hover:scale-105 transition-transform">
+                <h3 class="text-2xl font-bold text-primary mb-4">시작된 운명</h3>
+                <p class="text-white/70">
+                  10년 전, 평범한 직장인이었던 저는 우연히 발견한 번호의 패턴으로 인생이 바뀌었습니다.
+                  그 순간의 짜릿함은 지금도 잊을 수 없죠.
+                </p>
+              </div>
+              <div class="bg-white/5 rounded-2xl p-8 border border-white/10 transform hover:scale-105 transition-transform">
+                <h3 class="text-2xl font-bold text-primary mb-4">10년간의 연구</h3>
+                <p class="text-white/70">
+                  수많은 시행착오와 연구 끝에, 저만의 특별한 번호 선정 방법을 찾아냈습니다.
+                  이는 단순한 확률이 아닌, 수학적 패턴과 통계를 기반으로 합니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proof Section -->
+  <section id="proof" class="py-20 relative">
+    <div class="absolute inset-0 bg-gradient-to-b from-dark/50 to-dark"></div>
+    <div class="container mx-auto px-4 relative">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center gap-16">
+          <div class="md:w-1/2">
+            <h2 class="text-4xl font-bold mb-12 relative">
+              1등 당첨 인증
+              <div class="absolute -bottom-4 left-0 w-24 h-1 bg-primary"></div>
+            </h2>
+            <div class="bg-white/5 rounded-2xl p-8 border border-white/10">
+              <h3 class="text-2xl font-bold text-primary mb-6">제1081회 1등 당첨</h3>
+              <p class="text-white/70 mb-8">
+                10년간의 연구 끝에 찾아낸 저만의 방법으로<br/>
+                실제 1등 당첨을 경험했습니다.
+              </p>
+              <ul class="space-y-6">
+                <li class="flex items-center">
+                  <span class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center mr-4 text-primary text-xl">✓</span>
+                  <span class="text-white/70 text-lg">공식 당첨 인증서 보유</span>
+                </li>
+                <li class="flex items-center">
+                  <span class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center mr-4 text-primary text-xl">✓</span>
+                  <span class="text-white/70 text-lg">10년간의 연구 데이터</span>
+                </li>
+                <li class="flex items-center">
+                  <span class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center mr-4 text-primary text-xl">✓</span>
+                  <span class="text-white/70 text-lg">검증된 번호 선정 방법</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="md:w-1/2">
+            <div class="relative">
+              <div class="absolute -top-8 -right-8 w-32 h-32 bg-primary/20 rounded-full blur-2xl"></div>
+              <div class="absolute -bottom-8 -left-8 w-32 h-32 bg-secondary/20 rounded-full blur-2xl"></div>
+              <img src="certificate.jpg" alt="당첨 인증서" class="rounded-3xl transform rotate-3 hover:rotate-0 transition-transform duration-500" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Section -->
+  <section id="service" class="py-20 relative">
+    <div class="absolute inset-0 bg-gradient-to-b from-dark to-dark/50"></div>
+    <div class="container mx-auto px-4 relative">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-16 relative">
+          특별한 서비스
+          <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-primary"></div>
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white/5 rounded-2xl p-8 border border-white/10 transform hover:scale-105 transition-transform">
+            <div class="w-20 h-20 bg-primary/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <span class="text-3xl">🎯</span>
+            </div>
+            <h3 class="text-2xl font-bold text-primary mb-4 text-center">맞춤 번호 추천</h3>
+            <p class="text-white/70 text-center text-lg">
+              당신만을 위한 특별한 번호를 추천해드립니다
+            </p>
+          </div>
+          <div class="bg-white/5 rounded-2xl p-8 border border-white/10 transform hover:scale-105 transition-transform">
+            <div class="w-20 h-20 bg-primary/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <span class="text-3xl">📊</span>
+            </div>
+            <h3 class="text-2xl font-bold text-primary mb-4 text-center">당첨 분석</h3>
+            <p class="text-white/70 text-center text-lg">
+              상세한 당첨 확률과 패턴 분석을 제공합니다
+            </p>
+          </div>
+          <div class="bg-white/5 rounded-2xl p-8 border border-white/10 transform hover:scale-105 transition-transform">
+            <div class="w-20 h-20 bg-primary/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <span class="text-3xl">💎</span>
+            </div>
+            <h3 class="text-2xl font-bold text-primary mb-4 text-center">VIP 서비스</h3>
+            <p class="text-white/70 text-center text-lg">
+              프리미엄 회원을 위한 특별한 혜택을 제공합니다
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 relative">
+    <div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20"></div>
+    <div class="container mx-auto px-4 relative">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center gap-16">
+          <div class="md:w-1/2">
+            <h2 class="text-4xl font-bold mb-8 relative">
+              지금 바로 시작하세요
+              <div class="absolute -bottom-4 left-0 w-24 h-1 bg-white"></div>
+            </h2>
+            <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+              <h3 class="text-2xl font-bold text-primary mb-6">이번 주 추천 번호</h3>
+              <div class="flex justify-center space-x-4 mb-6">
+                <span class="w-14 h-14 flex items-center justify-center bg-primary text-dark rounded-full font-bold text-xl">3</span>
+                <span class="w-14 h-14 flex items-center justify-center bg-primary text-dark rounded-full font-bold text-xl">11</span>
+                <span class="w-14 h-14 flex items-center justify-center bg-primary text-dark rounded-full font-bold text-xl">19</span>
+                <span class="w-14 h-14 flex items-center justify-center bg-primary text-dark rounded-full font-bold text-xl">27</span>
+                <span class="w-14 h-14 flex items-center justify-center bg-primary text-dark rounded-full font-bold text-xl">34</span>
+                <span class="w-14 h-14 flex items-center justify-center bg-primary text-dark rounded-full font-bold text-xl">42</span>
+              </div>
+              <p class="text-white/70 text-sm text-center">* 실제 추천 번호는 결제 후 확인 가능합니다</p>
+            </div>
+          </div>
+          <div class="md:w-1/2">
+            <div class="relative">
+              <div class="absolute -top-8 -right-8 w-32 h-32 bg-primary/20 rounded-full blur-2xl"></div>
+              <div class="absolute -bottom-8 -left-8 w-32 h-32 bg-secondary/20 rounded-full blur-2xl"></div>
+              <a href="/payment" class="block bg-primary text-dark px-12 py-6 rounded-full text-2xl font-bold hover:bg-opacity-90 transition text-center">
+                추천 번호 받기
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="reviews" class="py-20 relative">
+    <div class="absolute inset-0 bg-gradient-to-b from-dark/50 to-dark"></div>
+    <div class="container mx-auto px-4 relative">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-16 relative">
+          고객 후기
+          <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-primary"></div>
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white/5 rounded-2xl p-8 border border-white/10 transform hover:scale-105 transition-transform">
+            <div class="flex items-center mb-6">
+              <img src="review1.jpg" alt="후기 작성자" class="w-20 h-20 rounded-full mr-6" />
+              <div>
+                <h4 class="font-bold text-xl">김** 님</h4>
+                <div class="text-yellow-400 text-xl">★★★★★</div>
+              </div>
+            </div>
+            <p class="text-white/70 text-lg">
+              "처음에는 반신반의했는데, 실제로 4등 당첨이 되었어요! 
+              운영자님의 노하우가 정말 대단합니다."
+            </p>
+          </div>
+          <div class="bg-white/5 rounded-2xl p-8 border border-white/10 transform hover:scale-105 transition-transform">
+            <div class="flex items-center mb-6">
+              <img src="review2.jpg" alt="후기 작성자" class="w-20 h-20 rounded-full mr-6" />
+              <div>
+                <h4 class="font-bold text-xl">이** 님</h4>
+                <div class="text-yellow-400 text-xl">★★★★★</div>
+              </div>
+            </div>
+            <p class="text-white/70 text-lg">
+              "3등 당첨으로 큰 행복을 누렸습니다. 
+              정말 감사합니다!"
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black/50 py-12 border-t border-white/10">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <h3 class="text-2xl font-bold mb-4">
+              <span class="text-primary">LUCKY</span>
+              <span class="text-white">NUMBERS</span>
+            </h3>
+            <p class="text-white/50">당신의 운명을 바꾸는 특별한 번호</p>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold mb-4 text-white">바로가기</h3>
+            <ul class="space-y-2">
+              <li><a href="/login" class="text-white/50 hover:text-primary transition">로그인</a></li>
+              <li><a href="/mypage" class="text-white/50 hover:text-primary transition">마이페이지</a></li>
+              <li><a href="/check" class="text-white/50 hover:text-primary transition">당첨 확인</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold mb-4 text-white">고객센터</h3>
+            <ul class="space-y-2">
+              <li class="text-white/50">평일 09:00 - 18:00</li>
+              <li class="text-white/50">문의: support@luckynumbers.com</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold mb-4 text-white">소셜 미디어</h3>
+            <div class="flex space-x-4">
+              <a href="#" class="text-white/50 hover:text-primary transition">Instagram</a>
+              <a href="#" class="text-white/50 hover:text-primary transition">YouTube</a>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-white/10 pt-8 text-center text-white/50">
+          <p>&copy; 2024 Lucky Numbers. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html> 
